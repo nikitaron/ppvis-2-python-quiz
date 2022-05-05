@@ -1,15 +1,57 @@
 # Список тэгов
 
+- [type](type.md)
+    - annotation
 - [int](int.md)
+    - literal
+    - operation
 - [boolean](boolean.md)
+    - literal
+    - operation
 - [float](float.md)
-- [string](string.md)
+    - literal
+    - operation
 - [list](list.md)
-- [dictionary](dictionary.md)
+    - literal
+    - operation
+        - slice
+        - ...
+- [string](string.md)
+    - literal
+    - operation
+- [byte](byte.md)
+    - literal
+    - operation
+- [dict](dict.md)
+    - literal
+    - operation
 - [set](set.md)
+    - literal
+    - operation
+        - length
+        - ...
 - [tuple](tuple.md)
+    - literal
+    - operation
 - [function](function.md)
+    - parameter
+    - attributes
 - [generator](generator.md)
+    - definition
 - [scope](scope.md)
 - [object](object.md)
+    - special method
 - [class](class.md)
+    - definition
+- [build-in](build-in.md)
+    - enumerate
+    - ...
+- [expression](expression.md)
+    - priority
+    - operation
+        - modulo
+        - ...
+- [statement](statement.md) Simple and compound statement
+    - assignment
+    - if
+    - ...
