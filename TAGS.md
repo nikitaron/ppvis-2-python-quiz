@@ -45,7 +45,20 @@
     - definition
 - [build-in](build-in.md)
     - enumerate
-    - ...
+    - filter
+    - map
+    - filter
+    - list
+    - dict
+    - set
+    - tuple
+    - sum
+    - int
+    - bool
+    - any
+    - iter
+    - next
+    - print
 - [expression](expression.md)
     - priority
     - operation
