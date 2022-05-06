@@ -39,7 +39,8 @@ Output: True
 Tag: #iterator
 
 ---
-```
+
+```python
 list = [1, 3, 6, 10]
 multiplied_list = (num**2 for num in list)
 
@@ -47,7 +48,9 @@ print(type(multiplied_list))
 ```
 Output: <class 'generator'>
 Tag: #generator/types
+
 ---
+
 ```python
 numbers = [1, 2, 3, 4, 5]
 
@@ -57,7 +60,9 @@ print(squares)
 ```
 Output: [4, 16]
 Tag: #generator
+
 ---
+
 ```python
 name = 'Tom'
 
@@ -77,6 +82,7 @@ Output: Hello Bob
 Tag: #visibility_of_variables#global_variables
 
 ---
+
 ```python
 def outer():
     num = 5
@@ -95,6 +101,7 @@ Output: 25
 Tag: #visibility_of_variables#functions#inner_functions
 
 ---
+
 ```python
 def outer():
     num = 5
@@ -134,6 +141,7 @@ Output: 25
 Tag: #visibility_of_variables#global#functions#inner_functions
 
 ---
+
 ```python
 def increment(n):
     yield n + 1
