@@ -23,17 +23,6 @@ Tag: #build-in/print
 
 ---
 ```python
-r = [i for i in range("10")]
-r.append()
-
-print(r)
-```
-Output: `TypeError: 'str' object cannot be interpreted as an integer`
-
-Tag: #build-in/range #list/comprehension
-
----
-```python
 l = [[1, 2], [3, 4, 5]]
 print(sum(l, []))
 ```
