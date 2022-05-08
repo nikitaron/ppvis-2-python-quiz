@@ -20,3 +20,13 @@ Output: `o-l-l-e-H`
 Tag: #list/operation/slice, #string/operation/join
 
 ---
+```python
+a = 1.2
+b = a - 0.2
+lst = [1.2, 0.2]
+
+print(a, lst[b])
+```
+Output: `TypeError: list indices must be integers or slices, not float`
+
+Tag: #list/literal
