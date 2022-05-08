@@ -71,6 +71,52 @@ print(len(s * 2 + ''))
 ```
 Output: `12`
 
-Tag: #string/operation/multiple 
+Tag: #string/operation/multiple #build-in/len
 
 ---
+```python
+a = "Good morning!"
+b = a.zfill(20)
+
+if b != a:
+    print(a, b)
+```
+Output: `"Good morning!" "0000000Good morning!"`
+
+Tag: #string/operation/zfill
+
+---
+```python
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price=49)) 
+```
+Output: `"For only 49.00 dollars!"`
+
+Tag: #string/operation/format
+
+---
+```python
+d = {
+    "coffee": 5,
+    "cola": 2.5,
+    "sprite": 3,
+    "pepsi": 2.5
+}
+for key, value in d.items():
+    print(key.ljust(10), str(value) + '$')
+```
+Output: ?????`coffee     5$
+cola       2.5$
+sprite     3$
+pepsi      2.5$`
+
+Tag: #string/operation/ljust #dict/operation/items #build-in/str
+
+---
+```python
+s = "Python3 is a lot better than Python2."
+print(s.rfind("Python"))
+```
+Output: `29`
+
+Tag: #string/operation/rfind

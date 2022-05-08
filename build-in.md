@@ -29,3 +29,11 @@ print(sum(l, []))
 Output: `[1, 2, 3, 4, 5]`
 
 Tag: #build-in/sum
+
+---
+```python
+print(callable(print))
+```
+Output: `True`
+
+Tag #build-in/callable

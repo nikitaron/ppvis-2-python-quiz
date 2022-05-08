@@ -18,3 +18,12 @@ Output: `0`
 Tag: #boolean
 
 ---
+```python
+if True:
+    print(1)
+else:
+    print(0)
+```
+Output: `1`
+
+Tag: #boolean
