@@ -42,7 +42,7 @@ print(x2)
 ```
 Output: `[1, 5, 7, <generator object <genexpr> at 0x7f18ad923f40>] [1, 5, 7, <generator object <genexpr> at 0x7f18ad923f40>]`
 
-Tag: #list/comprehension #build-in/append #build-in/range #generator
+Tag: #list/comprehension, #build-in/append, #build-in/range, #generator
 
 ---
 ```python
@@ -65,7 +65,7 @@ print(lst)
 ```
 Output: `Infinite loop.`
 
-Tag: #list/operation/append #string/operation/upper
+Tag: #list/operation/append, #string/operation/upper
 
 ---
 ```python
@@ -84,7 +84,7 @@ print(lst1 is lst2, lst1 == lst2)
 ```
 Output: `True True`
 
-Tag: #list #expression/operation/is #expression/operation/equality
+Tag: #list, #expression/operation/is, #expression/operation/equality
 
 ---
 ```python
@@ -94,7 +94,7 @@ print(lst1 is lst2, lst1 == lst2)
 ```
 Output: `False True`
 
-Tag: #list/operation/slice #expression/operation/is #expression/operation/equality
+Tag: #list/operation/slice, #expression/operation/is, #expression/operation/equality
 
 ---
 ```python
@@ -104,7 +104,7 @@ print(lst1 is lst2, lst1 == lst2)
 ```
 Output: `False True`
 
-Tag: #list/operation/copy #expression/operation/is #expression/operation/equality
+Tag: #list/operation/copy, #expression/operation/is, #expression/operation/equality
 
 ---
 ```python
@@ -119,7 +119,7 @@ print(furniture_2)
 Output: `['Fridge', 'Cooker', 'Toster', ['TV', 'Projector', 
 'Playstation', 'Fridge', 'Cooker', 'Toster']]`
 
-Tag: #list/operation/extend #list/operation/append
+Tag: #list/operation/extend, #list/operation/append
 
 ---
 ```python
@@ -129,7 +129,7 @@ print(*furniture[::-1])
 ```
 Output: `"TV" "Projector" "Playstation" "Fridge" "Cooker" "Toster"`
 
-Tag: #list/operation/reverse #list/operation/slice
+Tag: #list/operation/reverse, #list/operation/slice
 
 ---
 ```python
@@ -145,11 +145,11 @@ Tag: #list/operation/sort
 ```python
 lst = [15 + 6, 24 // 3, True == False, 12 - 3 - 3, 7 + 5 // 4]
 lst.sort(key=lambda x: x > 10)
-print(lst)
+print(set(lst))
 ```
-Output: `[8, False, 6, 8, 21]`
+Output: `{8, False, 21, 6}`
 
-Tag: #list/operation/sort
+Tag: #list/operation/sort, #build-in/set
 
 ---
 ```python
@@ -170,3 +170,23 @@ print(lst)
 Output: `[{0.0299}, [4.03], {32, 17, 54.54}, {41.7, 33, 55, 49}, (77.78,), [125, 91], (25, 48, 254)]`
 
 Tag: #list/operation/sort
+
+---
+```python
+a = ["Jake", "Mike", "O'Brien", "Tim", "George", "Heisenberg"]
+a.insert("Kenny", 14)
+print(a)
+```
+Output: `TypeError: 'str' object cannot be interpreted as an integer`
+
+Tag: #list.operation/insert
+
+---
+```python
+a = ["Jake", "Mike", "O'Brien", "Tim", "George", "Heisenberg"]
+a.insert(14, "Kenny")
+print(a)
+```
+Output: `['Jake', 'Mike', "O'Brien", 'Tim', 'George', 'Heisenberg', 'Kenny']`
+
+Tag: #list.operation/insert

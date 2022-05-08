@@ -29,7 +29,7 @@ for x in set(a):
 ```
 Output: `0 1 2 3 4 5 6 7 8`
 
-Tag: #set #list/comprehension #build-in/set
+Tag: #set, #list/comprehension, #build-in/set
 
 ---
 ```python
@@ -59,7 +59,7 @@ print(a & b | a)
 ```
 Output: `{1, 2, 3}`
 
-Tag: #set/operation/definition #set/operation/addition
+Tag: #set/operation/definition, #set/operation/addition
 
 ---
 ```python
@@ -69,7 +69,7 @@ print(a | b & a)
 ```
 Output: `{1, 2, 3, 4, 5}`
 
-Tag: #set/operation/definition #set/operation/addition
+Tag: #set/operation/definition, #set/operation/addition
 
 ---
 ```python
@@ -81,7 +81,7 @@ print(c)
 ```
 Output: `{1, 2, 3, 4, 7}`
 
-Tag: #set/operation/union #set/operation/definition
+Tag: #set/operation/union, #set/operation/definition
 
 ---
 ```python
@@ -93,7 +93,7 @@ print(c)
 ```
 Output: `{3, 5, 6, 7}`
 
-Tag: #set/operation/symmetric_difference #set/operation/addition
+Tag: #set/operation/symmetric_difference, #set/operation/addition
 
 ---
 ```python
@@ -131,7 +131,7 @@ print(*lang2.difference(lang1))
 ```
 Output: `"JavaScript" "PHP" "Python"`
 
-Tag: #set/operation/difference #set/operation/update
+Tag: #set/operation/difference, #set/operation/update
 
 ---
 ```python

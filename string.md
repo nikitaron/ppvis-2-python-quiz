@@ -62,7 +62,7 @@ print(s[4:10])
 ```
 Output: `"2, 3)"`
 
-Tag: #string/operation/slice #build-in/str
+Tag: #string/operation/slice, #build-in/str
 
 ---
 ```python
@@ -71,7 +71,7 @@ print(len(s * 2 + ''))
 ```
 Output: `12`
 
-Tag: #string/operation/multiple #build-in/len
+Tag: #string/operation/multiple, #build-in/len
 
 ---
 ```python
@@ -110,7 +110,7 @@ cola       2.5$
 sprite     3$
 pepsi      2.5$`
 
-Tag: #string/operation/ljust #dict/operation/items #build-in/str
+Tag: #string/operation/ljust, #dict/operation/items #build-in/str
 
 ---
 ```python
@@ -120,3 +120,21 @@ print(s.rfind("Python"))
 Output: `29`
 
 Tag: #string/operation/rfind
+
+---
+```python
+s = "Python3 is a lot better than Python2."
+print(s.rpartition("Python"))
+```
+Output: `('Python3 is a lot better than ', 'Python', '2.')`
+
+Tag: #string/operation/rpartition
+
+---
+```python
+s = "Python3 is a lot better than Python2."
+print(s.partition("Python"))
+```
+Output: `('', 'Python', '3 is a lot better than Python2.')`
+
+Tag: #string/operation/partition
