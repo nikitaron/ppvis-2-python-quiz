@@ -15,7 +15,7 @@ print(c is True)
 ```
 Output: `False`
 
-Tag: #boolean/literal
+Tag: #boolean/literal, #boolean/operation/add, #expression/operation/is
 
 ---
 ```python
@@ -28,7 +28,7 @@ print(b == c)
 ```
 Output: `False True`
 
-Tag: #boolean/literal
+Tag: #boolean/literal, #boolean/operation/compare
 
 ---
 ```python
@@ -41,11 +41,18 @@ print(lst[lst[False]])
 Output: `True False`
 
 Tag: #boolean/literal, #list/literal
+
 ---
 ```python
+a = False
 
+for x in range(1, 3):
+    a = not a
+
+print(a)
 
 ```
-Output: `True False`
+Output: `False`
 
-Tag: #boolean/literal, #list/literal
+Tag: #boolean/literal, #boolean/operation/not, #build-in/range
+
