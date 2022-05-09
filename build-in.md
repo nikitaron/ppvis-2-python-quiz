@@ -183,3 +183,48 @@ Output: `2 5`
 Tag: #build-in/iter, #build-in/next, #list/literal
 
 ---
+
+```python
+print('a' 'b' 'c' 'd')
+```
+Output: `abcd`
+
+Tag: #build-in/print
+
+---
+
+```python
+lst = [1, 2, 3, 4]
+
+r = 1
+
+for i in range(len(lst)):
+    r *= i
+
+print(r)
+```
+Output: `0`
+
+Tag: #build-in/range
+
+---
+
+```python
+print(all([]))
+```
+Output: `True`
+
+Tag: #build-in/all
+
+---
+
+```python
+func = lambda x : x % 2 == 0
+nums = filter(func, range(17))
+print(len(nums) + min(nums))
+```
+Output: `TypeError: object of type 'filter' has no len()`
+
+Tag: #build-in/filter
+
+---

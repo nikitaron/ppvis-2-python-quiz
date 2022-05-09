@@ -56,3 +56,16 @@ Output: `False`
 
 Tag: #boolean/literal, #boolean/operation/not, #build-in/range
 
+---
+
+```python
+data = [([]), [()]]
+
+for i in data:
+    print(bool(i), end=' ')
+```
+Output: `False True`
+
+Tag: #boolean/literal
+
+---
