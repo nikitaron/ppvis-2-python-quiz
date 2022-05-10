@@ -38,9 +38,8 @@ x1 = [i for i in range(10) if i % 2 and i % 3]
 x2 = x1
 x2.append(e for e in range(8) if e not in x1)
 print(x1)
-print(x2)
 ```
-Output: `[1, 5, 7, <generator object <genexpr> at 0x7f18ad923f40>] [1, 5, 7, <generator object <genexpr> at 0x7f18ad923f40>]`
+Output: `[1, 5, 7, <generator object <genexpr> at 0x7f18ad923f40>]`
 
 Tag: #list/comprehension, #build-in/append, #build-in/range, #generator
 
@@ -66,15 +65,6 @@ print(lst)
 Output: `Infinite loop.`
 
 Tag: #list/operation/append, #string/operation/upper
-
----
-```python
-a, *b, c = [1, 2]
-print(a, b, c)
-```
-Output: `1 [] 2`
-
-Tag: #list
 
 ---
 ```python
@@ -137,7 +127,7 @@ row_data = ["False", 1076, [], True, 13 - 5, ("Vancouver", "Helsinki", "Montreal
 row_data.sort(reverse=True)
 print(row_data)
 ```
-Output: `TypeError: '<' not supported between instances of 'int' and 'str'`
+Output: `TypeError: '<' not supported between 'int' and 'str'`
 
 Tag: #list/operation/sort
 
@@ -179,14 +169,14 @@ print(a)
 ```
 Output: `TypeError: 'str' object cannot be interpreted as an integer`
 
-Tag: #list.operation/insert
+Tag: #list/operation/insert
 
 ---
 ```python
-a = ["Jake", "Mike", "O'Brien", "Tim", "George", "Heisenberg"]
+a = ["Jake", "Mike", "O'Brien", "Heisenberg"]
 a.insert(14, "Kenny")
 print(a)
 ```
-Output: `['Jake', 'Mike', "O'Brien", 'Tim', 'George', 'Heisenberg', 'Kenny']`
+Output: `['Jake', 'Mike', "O'Brien", 'Heisenberg', 'Kenny']`
 
-Tag: #list.operation/insert
+Tag: #list/operation/insert

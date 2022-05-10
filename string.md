@@ -96,24 +96,6 @@ Tag: #string/operation/format
 
 ---
 ```python
-d = {
-    "coffee": 5,
-    "cola": 2.5,
-    "sprite": 3,
-    "pepsi": 2.5
-}
-for key, value in d.items():
-    print(key.ljust(10), str(value) + '$')
-```
-Output: ?????`coffee     5$
-cola       2.5$
-sprite     3$
-pepsi      2.5$`
-
-Tag: #string/operation/ljust, #dict/operation/items #build-in/str
-
----
-```python
 s = "Python3 is a lot better than Python2."
 print(s.rfind("Python"))
 ```
