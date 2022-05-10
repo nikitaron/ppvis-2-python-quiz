@@ -36,6 +36,8 @@
 - [function](function.md)
     - parameter
     - attributes
+    - lambda
+    - inner
 - [generator](generator.md)
     - definition
 - [scope](scope.md)
