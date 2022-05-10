@@ -5,7 +5,7 @@ multiplied_list = (num**2 for num in num_list)
 print(type(multiplied_list))
 ```
 Output: `<class 'generator'>`
-Tag: #generator, #build-in/num_list, #build-in/type
+Tag: #generator, #build-in/list, #build-in/type
 ---
 
 ```python
