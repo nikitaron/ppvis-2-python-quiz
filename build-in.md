@@ -22,6 +22,23 @@ Output: `[[...]]`
 Tag: #build-in/print
 
 ---
+```python
+l = [[1, 2], [3, 4, 5]]
+print(sum(l, []))
+```
+Output: `[1, 2, 3, 4, 5]`
+
+Tag: #build-in/sum
+
+---
+```python
+print(callable(print))
+```
+Output: `True`
+
+Tag #build-in/callable
+
+---
 
 ```python
 list_of_tuple = [('bob', 35, 'mgr'), ('sue', 40, 'dev')]

@@ -7,6 +7,29 @@ Tag: #boolean/literal
 
 ---
 ```python
+a = True
+
+a -= True
+
+print(a)
+```
+Output: `0`
+
+Tag: #boolean
+
+---
+```python
+if True:
+    print(1)
+else:
+    print(0)
+```
+Output: `1`
+
+Tag: #boolean
+
+---
+```python
 a = 0
 b = True
 c = a + b
@@ -50,14 +73,12 @@ for x in range(1, 3):
     a = not a
 
 print(a)
-
 ```
 Output: `False`
 
 Tag: #boolean/literal, #boolean/operation/not, #build-in/range
 
 ---
-
 ```python
 data = [([]), [()]]
 
