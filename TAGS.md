@@ -47,15 +47,29 @@
     - enumerate
     - filter
     - map
-    - filter
+    - zip
     - list
+    - slice
     - dict
     - set
     - tuple
+    - len
+    - min
+    - max
     - sum
+    - reversed
     - int
+    - float
+    - range
+    - divmod
+    - pow
     - bool
+    - setattr
+    - getattr
+    - isinstance
+    - issubclass
     - any
+    - all
     - iter
     - next
     - print
