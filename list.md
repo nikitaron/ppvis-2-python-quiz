@@ -243,3 +243,18 @@ Output: `True False True True`
 Tag: #list/operation/in
 
 ---
+
+```python
+obj1 = { "1": 1 }
+obj2 = { "2": 1 }
+obj3 = { "1": 1 }
+
+values = [obj1, obj2, obj3]
+
+print(values.count(obj1))
+```
+Output: `2`
+
+Tag: #list/operation/count, #dict/equal
+
+---

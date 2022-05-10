@@ -74,3 +74,20 @@ Output: `AttributeError: 'tuple' object has no attribute 'append'`
 Tag: #function/parameter/unpacking
 
 ---
+
+```python
+def foo(value = []):
+  value.append('some')
+  return value
+
+values = []
+for i in range(3):
+  values.append(foo())
+
+print(values)
+```
+Output: `[['some', 'some', 'some'], ['some', 'some', 'some'], ['some', 'some', 'some']]`
+
+Tag: #function/parameter/default
+
+---

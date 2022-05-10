@@ -49,3 +49,12 @@ Output: `5 None False`
 Tag: #expression/priority
 
 ---
+
+```python
+print(type( 3.4 // 2 ))
+```
+Output: `<class 'float'>`
+
+Tag: #expression/integer_division
+
+---

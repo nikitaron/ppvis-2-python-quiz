@@ -38,3 +38,33 @@ Output: `[{1}, {2}, {3}]`
 Tag: #dict/operation/values
 
 ---
+
+```python
+template = { "i": 0 }
+values = []
+
+for i in range(5):
+  if i > 2:
+    template["i"] = i
+    values.append(template)
+
+print(values)
+```
+Output: `[{'i': 4}, {'i': 4}]`
+
+Tag: #dict/lvalue
+
+---
+
+```python
+d = {
+  -1: "some"
+}
+
+print(d[-1])
+```
+Output: `some`
+
+Tag: #dict/indexing
+
+---

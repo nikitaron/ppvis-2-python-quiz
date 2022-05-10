@@ -181,3 +181,14 @@ Output: `aa`
 Tag: #string/operation/multiply
 
 ---
+
+```python
+values = '' or None
+
+print(values)
+```
+Output: `None`
+
+Tag: #string/operation/empty_value
+
+---
