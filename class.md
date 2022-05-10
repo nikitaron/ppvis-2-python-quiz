@@ -57,3 +57,46 @@ Output: `24`
 Tag: #class/method/__add__
 
 ---
+
+```python
+class A:
+  def __init__(self, i):
+    self.i = i
+
+  def __eq__(self, __o: object) -> bool:
+      return self.i == __o.i
+
+a1 = A(1)
+a2 = A(2)
+a3 = A(2)
+
+values = [a1, a2, a3]
+
+print(values.count(a2))
+```
+Output: `2`
+
+Tag: #class/method/__eq__
+
+---
+
+```python
+class MyClass:
+  def __init__(self):
+    self.message = 'Hello, World'
+
+
+def say_hello(self):
+  print(self.message)
+
+MyClass.say_hello = say_hello
+
+a = MyClass()
+
+a.say_hello()
+```
+Output: `Hello, World`
+
+Tag: #class/prototype
+
+---

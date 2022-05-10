@@ -29,3 +29,16 @@ Output: `<class 'tuple'>`
 Tag: #tuple/literal
 
 ---
+
+```python
+tp = (0, 1)
+
+tp[0] = 1
+
+print(tp)
+```
+Output: `TypeError: 'tuple' object does not support item assignment`
+
+Tag: #tuple/assignment
+
+---
