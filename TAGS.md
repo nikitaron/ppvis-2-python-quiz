@@ -46,6 +46,8 @@
 - [class](class.md)
     - definition
 - [build-in](build-in.md)
+    - nonlocal
+    - global
     - enumerate
     - filter
     - map
