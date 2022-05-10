@@ -28,3 +28,24 @@ Output: `0.5`
 Tag: #expression/operation/modulo
 
 ---
+
+```python
+a = None
+b = False
+
+print((a or b) or a)
+```
+Output: `None`
+
+Tag: #expression/operation/or
+
+---
+
+```python
+print(bool(print(print(5))))
+```
+Output: `5 None False`
+
+Tag: #expression/priority
+
+---

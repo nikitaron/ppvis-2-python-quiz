@@ -53,3 +53,17 @@ print(type(a))
 Output: `<class 'dict'>`
 
 Tag: #dict, #type, #build-in/type
+
+---
+```python
+import math
+
+x = math.pow(2, 3)
+y = pow(2, 3)
+print(type(x) == type(y))
+```
+Output: `False`
+
+Tag: #type/compare
+
+---

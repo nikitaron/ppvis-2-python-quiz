@@ -19,3 +19,13 @@ Output: `(5, 6)`
 Tag: #tuple/slice
 
 ---
+```python
+a = ()
+
+print(type(a))
+```
+Output: `<class 'tuple'>`
+
+Tag: #tuple/literal
+
+---
