@@ -36,6 +36,8 @@
 - [function](function.md)
     - parameter
     - attributes
+    - lambda
+    - inner
 - [generator](generator.md)
     - definition
 - [scope](scope.md)
@@ -45,7 +47,34 @@
     - definition
 - [build-in](build-in.md)
     - enumerate
-    - ...
+    - filter
+    - map
+    - zip
+    - list
+    - slice
+    - dict
+    - set
+    - tuple
+    - len
+    - min
+    - max
+    - sum
+    - reversed
+    - int
+    - float
+    - range
+    - divmod
+    - pow
+    - bool
+    - setattr
+    - getattr
+    - isinstance
+    - issubclass
+    - any
+    - all
+    - iter
+    - next
+    - print
 - [expression](expression.md)
     - priority
     - operation

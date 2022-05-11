@@ -28,3 +28,33 @@ Output: `0.5`
 Tag: #expression/operation/modulo
 
 ---
+
+```python
+a = None
+b = False
+
+print((a or b) or a)
+```
+Output: `None`
+
+Tag: #expression/operation/or
+
+---
+
+```python
+print(bool(print(print(5))))
+```
+Output: `5 None False`
+
+Tag: #expression/priority
+
+---
+
+```python
+print(type( 3.4 // 2 ))
+```
+Output: `<class 'float'>`
+
+Tag: #expression/integer_division
+
+---
