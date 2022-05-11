@@ -510,3 +510,14 @@ Output: `Roma`
 Tag: #build-in/enumerate, #build-in/list, #list/literal
 
 ---
+```python
+a = 5 ** 1000000
+print(isinstance(a, int))
+```
+
+Output: `True`
+
+Tag: #build-in/isinstance, #int/pow
+
+---
+

@@ -192,3 +192,15 @@ Output: `None`
 Tag: #string/operation/empty_value
 
 ---
+
+```python
+a = '1'.encode()
+b = (1).encode()
+
+print(a == b)
+```
+Output: `AttributeError: 'int' object has no attribute 'encode'`
+
+Tag: #string/operation/encode
+
+---

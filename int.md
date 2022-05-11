@@ -59,4 +59,13 @@ Output: `False`
 Tag: #int/operation/bin, #build-in/bytes, #build-in/str
 
 ---
+```python
+a = 101 ** 100
+b = 95. ** 100
+print(type(a) == type(b))
+```
+Output: `False`
 
+Tag: #int/operation/pow, #float/operation/pow, #build-in/type
+
+---

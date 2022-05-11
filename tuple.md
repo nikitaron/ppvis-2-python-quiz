@@ -52,3 +52,17 @@ Output: `TypeError: tuple expected at most 1 argument, got 3`
 Tag: #tuple/literal, #build-in/tuple
 
 ---
+```python
+a = (1, 2, 3, 2, 1)
+b = range(1, 6)
+
+for x in b:
+    if a.__contains__(x):
+        a += (a.count(x),)
+print(a)
+```
+Output: `(1, 2, 3, 2, 1, 2, 3, 2)`
+
+Tag: #tuple/operation/contains, #tuple/operation/count, #build-in/range
+
+---
