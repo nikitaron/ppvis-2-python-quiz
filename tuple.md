@@ -29,7 +29,6 @@ Output: `<class 'tuple'>`
 Tag: #tuple/literal
 
 ---
-
 ```python
 tp = (0, 1)
 
@@ -40,5 +39,16 @@ print(tp)
 Output: `TypeError: 'tuple' object does not support item assignment`
 
 Tag: #tuple/assignment
+
+---
+```python
+tuple1 = (1, 2, 3)
+tuple2 = tuple(1, 2, 3)
+
+print(tuple1 == tuple2)
+```
+Output: `TypeError: tuple expected at most 1 argument, got 3`
+
+Tag: #tuple/literal, #build-in/tuple
 
 ---

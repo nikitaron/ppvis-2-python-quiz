@@ -67,3 +67,25 @@ Output: `False`
 Tag: #type/compare
 
 ---
+```python
+a: float = 1
+b: float = 2
+
+print((a + b).bit_length())
+```
+Output: `2`
+
+Tag: #type/annotation, #int/operation/bit_length
+
+---
+```python
+a: type = type(type)
+b = type(int)
+print(a is b)
+```
+Output: `True`
+
+Tag: #type/annotation, #build-in/type
+
+---
+
