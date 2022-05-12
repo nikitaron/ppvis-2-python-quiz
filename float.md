@@ -34,3 +34,29 @@ Output: `(8106479329266893, 9007199254740992)`
 Tag: #float/operation/as_integer_ratio
 
 ---
+```python
+n = 6.732894256771
+print(f"{n:.4f}" == f"{round(n, 4)}")
+```
+Output: `True`
+
+Tag: #float/round, #build-in/round
+
+---
+```python
+a = f"{2e-3 + 0.001 - 1}"
+print(len(a))
+```
+Output: `6`
+
+Tag: #float, #build-in/len
+
+---
+```python
+print(9**19 - int(float(9**19)) > 0)
+```
+Output: `True`
+
+Tag: #build-in/int, #build-in/float, #int/operator/exponentiation
+
+---

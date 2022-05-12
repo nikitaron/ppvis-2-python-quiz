@@ -96,3 +96,66 @@ Output: `-1`
 Tag: #statement/for
 
 ---
+
+```python
+try:
+    raise IndexError
+except IndexError:
+    print("Получаем исключение")
+else:
+    print("Ловим его")
+```
+Output: `"Получаем исключение"`
+
+Tag: #statement/try
+
+---
+```python
+def f():
+    try: 
+        return 1
+    finally:
+        return 2
+
+print(f())
+```
+Output: `2`
+
+Tag: #statement/try
+
+---
+```python
+a = {(13, 3), "qwer", 67, 1, 5, 33, 2, 7, "youths"}
+b = ["python"]
+
+for el in a:
+    b.append(el)
+else:
+    a.union(b)
+    
+print(a)
+```
+Output: `{1, 2, 67, 33, 5, 'python', 7, (13, 3), 'youths', 'qwer'}`
+
+Tag: #statement/for
+
+---
+```python
+lst = [15, 30, 11, 12, 9, 0, 6, 4, 12, 13]
+free_list = ["free list"]
+last_element = 0
+n = 0
+
+while not any(free_list):
+    free_list.append(lst[n])
+    n += 1
+else:
+    last_element = free_list.pop()
+    
+print(last_element)
+```
+Output: `"free list"`
+
+Tag: #statement/while
+
+---

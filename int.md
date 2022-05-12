@@ -14,3 +14,14 @@ print(a.bit_count(), b.bit_count())
 Output: `2 1`
 
 Tag: #int/operation/bit_count, #int/literal
+
+---
+```python
+a = 1 - .1
+print(int(a))
+```
+Output: `0`
+
+Tag: #int #build-in/int
+
+---
