@@ -23,6 +23,6 @@ print(*gen)
 ```
 Output: `''`
 
-Tag: #generator/use
+Tag: #generator/reusable
 
 ---

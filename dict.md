@@ -90,6 +90,6 @@ print(len(d))
 ```
 Output: `4`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---

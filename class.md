@@ -150,7 +150,7 @@ p1.my_age()
 ```
 Output: `AttributeError: 'Person' object has no attribute 'age'`
 
-Tag: #class/operation/del
+Tag: #statement/del, #class/property
 
 ---
 
@@ -173,7 +173,7 @@ x.printname()
 ```
 Output: `Mike Olsen`
 
-Tag: #class/super
+Tag: #class/super, #class/inheritance
 
 ---
 
@@ -197,6 +197,6 @@ x.printname()
 ```
 Output: `AttributeError: 'Student' object has no attribute 'firstname'`
 
-Tag: #class/super
+Tag: #class/super, #class/inheritance
 
 ---

@@ -96,7 +96,7 @@ print(type(x))
 ```
 Output: `<class 'complex'>`
 
-Tag: #type/complex
+Tag: #complex,  #type, #build-in/type
 
 ---
 
@@ -107,7 +107,7 @@ print(type(text))
 ```
 Output: `<class 'bytes'>`
 
-Tag: #type/bytes
+Tag: #bytes,  #type, #build-in/type
 
 ---
 

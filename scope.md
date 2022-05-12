@@ -68,7 +68,7 @@ print(x)
 ```
 Output: `300`
 
-Tag: #scope
+Tag: #scope, #statement/global
 
 ---
 
@@ -85,7 +85,7 @@ print(x)
 ```
 Output: `200`
 
-Tag: #scope
+Tag: #scope, #statement/global
 
 ---
 

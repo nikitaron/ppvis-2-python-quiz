@@ -114,7 +114,7 @@ print(foo(0))
 ```
 Output: `5`
 
-Tag: #statement/try
+Tag: #statement/try_except,  #statement/try_except_else, #statement/try_except_finally
 
 ---
 
@@ -133,6 +133,79 @@ print(foo(4))
 ```
 Output: `4`
 
-Tag: #statement/try
+Tag: #statement/try_except, #statement/try_except_else
+
+---
+
+```python
+assert "hello, world" is True
+```
+Output: `AssertionError`
+
+Tag: #statement/assert, #expression/operation/is, #boolean/literal
+
+---
+
+```python
+value = True
+
+assert value == True 
+```
+Output: `''`
+
+Tag: #statement/assert, #boolean/literal,  #boolean/operation/compare
+
+---
+
+```python
+try:
+    print(1 / 0)
+except:
+    raise RuntimeError("Something bad happened")
+```
+Output: `ZeroDivisionError: division by zero`
+
+Tag: #statement/raise, #statement/try_except
+
+---
+
+```python
+import math as m
+
+print(m.sqrt(64))
+```
+Output: `8.0`
+
+Tag: #statement/as, #statement/import
+
+---
+
+```python
+value = True
+
+if value is not False:
+  print("False")
+else:
+  print("True")
+```
+Output: `False`
+
+Tag: #statement/not, #statement/is, #boolean/literal
+
+---
+
+```python
+values = []
+
+for i in range(10):
+  if i < 4:
+    continue
+  values.append(i)
+
+print(values)
+```
+Output: `[4, 5, 6, 7, 8, 9]`
+
+Tag: #statement/for, #statement/continue, #expression/operation/smaller
 
 ---
