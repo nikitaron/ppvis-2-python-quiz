@@ -81,3 +81,15 @@ Output: `1 False`
 Tag: #dict/indexing
 
 ---
+
+```python
+text = '1,2,3'
+d = dict.fromkeys(text)
+
+print(len(d))
+```
+Output: `4`
+
+Tag: #dict/method/fromkeys
+
+---

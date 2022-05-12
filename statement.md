@@ -96,3 +96,43 @@ Output: `-1`
 Tag: #statement/for
 
 ---
+
+```python
+def foo(value):
+  num = 12
+  try:
+    num //= value
+  except:
+    num = 3
+  else:
+    num = 4
+  finally:
+    num = 5
+  return num
+
+print(foo(0))
+```
+Output: `5`
+
+Tag: #statement/try
+
+---
+
+```python
+def foo(value):
+  num = 12
+  try:
+    num //= value
+  except:
+    num = 3
+  else:
+    num = 4
+  return num
+
+print(foo(4))
+```
+Output: `4`
+
+Tag: #statement/try
+
+---

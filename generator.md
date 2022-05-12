@@ -12,3 +12,17 @@ Output: `1`
 Tag: #generator/definition, #iterator
 
 ---
+
+```python
+a = [1, 5, 14]
+
+gen = (i * 2 for i in a)
+b = list(gen)
+
+print(*gen)
+```
+Output: `''`
+
+Tag: #generator/use
+
+---

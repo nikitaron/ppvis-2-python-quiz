@@ -204,3 +204,14 @@ Output: `AttributeError: 'int' object has no attribute 'encode'`
 Tag: #string/operation/encode
 
 ---
+
+```python
+txt = "The best things in life are free!"
+
+print("free" in txt)
+```
+Output: `True`
+
+Tag: #string/operation/in
+
+---

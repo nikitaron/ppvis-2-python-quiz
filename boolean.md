@@ -90,3 +90,14 @@ Output: `False True`
 Tag: #boolean/literal
 
 ---
+
+```python
+x = bool("")
+
+print(x == True)
+```
+Output: `False`
+
+Tag: #string/literal, #boolean/operation/compare
+
+---
