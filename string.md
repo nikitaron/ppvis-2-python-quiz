@@ -204,3 +204,107 @@ Output: `AttributeError: 'int' object has no attribute 'encode'`
 Tag: #string/operation/encode
 
 ---
+
+```python
+a = '1'.encode()
+b = (1).encode()
+
+print(a == b)
+```
+Output: `AttributeError: 'int' object has no attribute 'encode'`
+
+Tag: #string/operation/encode
+
+---
+
+```python
+txt = "hello, my name is Peter, I am 26 years old"
+
+x = txt.split(", ")
+
+print(x)
+```
+Output: `['hello', 'my name is Peter', 'I am 26 years old']`
+
+Tag: #string/method/split
+
+---
+
+
+```python
+txt = "apple#banana#cherry#orange"
+
+x = txt.split("#", 1)
+
+print(x)
+```
+Output: `['apple', 'banana#cherry#orange']`
+
+Tag: #string/method/split
+
+---
+
+```python
+txt = "Thank you for the music\nWelcome to the jungle\n"
+
+x = txt.splitlines()
+
+print(x)
+```
+Output: `['Thank you for the music', 'Welcome to the jungle']`
+
+Tag: #string/method/splitlines
+
+---
+
+```python
+txt = "Thank you for the music\nWelcome to the jungle"
+
+x = txt.splitlines(True)
+
+print(x)
+```
+Output: `['Thank you for the music\n', 'Welcome to the jungle']`
+
+Tag: #string/method/splitlines
+
+---
+
+```python
+mydict = {83:  80}
+
+txt = "Hello Sam!"
+
+print(txt.translate(mydict))
+```
+Output: `Hello Pam!`
+
+Tag: #string/method/translate
+
+---
+
+```python
+txt = "Hi Sam!"
+
+x = "mSa"
+y = "eJo"
+
+mytable = txt.maketrans(x, y)
+print(txt.translate(mytable))
+```
+Output: `Hi Joe!`
+
+Tag: #string/method/maketrans, #string/method/translate
+
+---
+
+```python
+txt = ",,,,,rrttgg.....banana....rrr"
+
+x = txt.strip(",.grt")
+```
+Output: `banana`
+
+Tag: #string/method/strip
+
+---

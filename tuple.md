@@ -66,3 +66,80 @@ Output: `(1, 2, 3, 2, 1, 2, 3, 2)`
 Tag: #tuple/operation/contains, #tuple/operation/count, #build-in/range
 
 ---
+
+```python
+def foo(value):
+  t = value,
+  return t
+
+print(foo(1))
+```
+Output: `(1,)`
+
+Tag: #tuple/literal
+
+---
+
+```python
+t1 = (11, 14, 54, 0, 58, 41)
+
+res = len(set(t1)) == len(t1)
+
+print(res)
+```
+Output: `True`
+
+Tag: #tuple/literal, #set/parameter
+
+---
+
+```python
+value = (4, 5, 6)
+
+print(type(value) is tuple)
+```
+Output: `True`
+
+Tag: #tuple/literal, #type
+
+---
+
+```python
+value = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = value.count(5)
+
+print(x)
+```
+Output: `2`
+
+Tag: #tuple/method/count
+
+---
+
+```python
+value = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = value.index(8)
+
+print(x)
+```
+Output: `3`
+
+Tag: #tuple/method/index
+
+---
+
+```python
+value = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+x = value.index(0)
+
+print(x)
+
+```
+Output: `ValueError: tuple.index(x): x not in tuple`
+
+Tag: #tuple/method/index
+
+---

@@ -202,3 +202,72 @@ print(len(st))
 Output: `5`
 
 Tag: #set/comprehension, #boolean/literal
+
+---
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+fruits.add("orange")
+
+print(fruits)
+```
+Output: `{'orange', 'apple', 'cherry', 'banana'}`
+
+Tag: #set/method/add
+
+---
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+fruits.add("banana")
+
+print(fruits)
+```
+Output: `{'cherry', 'banana', 'apple'}`
+
+Tag: #set/method/add
+
+---
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+fruits.clear()
+
+print(fruits)
+```
+Output: `set()`
+
+Tag: #set/method/clear
+
+---
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+fruits.remove("orange")
+
+print(fruits) 
+```
+Output: `KeyError: 'orange'`
+
+Tag: #set/method/remove
+
+---
+
+```python
+fruits = {"apple", "banana", "cherry"}
+
+fruits.discard("orange")
+
+print(fruits)
+```
+Output: `{'apple', 'banana', 'cherry'}`
+
+Tag: #set/method/discard
+
+---
+
+
