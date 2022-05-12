@@ -46,13 +46,14 @@ Tag: #byte/literal
 ---
 
 ```python
-a = str('a').encode()
+a = 'a'.encode()
 b = b'a'
 
-print(a is b)
+print(a == b)
 ```
 Output: `True`
 
-Tag: #byte/literal
+Tag: #byte/literal, #string/operation/encode
 
 ---
+
