@@ -214,7 +214,7 @@ print(fruits)
 ```
 Output: `{'orange', 'apple', 'cherry', 'banana'}`
 
-Tag: #set/method/add
+Tag: #set/operation/add
 
 ---
 
@@ -227,7 +227,7 @@ print(fruits)
 ```
 Output: `{'cherry', 'banana', 'apple'}`
 
-Tag: #set/method/add
+Tag: #set/operation/add
 
 ---
 
@@ -240,7 +240,7 @@ print(fruits)
 ```
 Output: `set()`
 
-Tag: #set/method/clear
+Tag: #set/operation/clear
 
 ---
 
@@ -253,7 +253,7 @@ print(fruits)
 ```
 Output: `KeyError: 'orange'`
 
-Tag: #set/method/remove
+Tag: #set/operation/remove
 
 ---
 
@@ -266,7 +266,7 @@ print(fruits)
 ```
 Output: `{'apple', 'banana', 'cherry'}`
 
-Tag: #set/method/discard
+Tag: #set/operation/discard
 
 ---
 

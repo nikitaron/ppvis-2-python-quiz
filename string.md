@@ -226,7 +226,7 @@ print(x)
 ```
 Output: `['hello', 'my name is Peter', 'I am 26 years old']`
 
-Tag: #string/method/split
+Tag: #string/operation/split
 
 ---
 
@@ -240,7 +240,7 @@ print(x)
 ```
 Output: `['apple', 'banana#cherry#orange']`
 
-Tag: #string/method/split
+Tag: #string/operation/split
 
 ---
 
@@ -253,7 +253,7 @@ print(x)
 ```
 Output: `['Thank you for the music', 'Welcome to the jungle']`
 
-Tag: #string/method/splitlines
+Tag: #string/operation/splitlines
 
 ---
 
@@ -266,7 +266,7 @@ print(x)
 ```
 Output: `['Thank you for the music\n', 'Welcome to the jungle']`
 
-Tag: #string/method/splitlines
+Tag: #string/operation/splitlines
 
 ---
 
@@ -279,7 +279,7 @@ print(txt.translate(mydict))
 ```
 Output: `Hello Pam!`
 
-Tag: #string/method/translate
+Tag: #string/operation/translate
 
 ---
 
@@ -294,7 +294,7 @@ print(txt.translate(mytable))
 ```
 Output: `Hi Joe!`
 
-Tag: #string/method/maketrans, #string/method/translate
+Tag: #string/operation/maketrans, #string/operation/translate
 
 ---
 
@@ -305,6 +305,6 @@ x = txt.strip(",.grt")
 ```
 Output: `banana`
 
-Tag: #string/method/strip
+Tag: #string/operation/strip
 
 ---

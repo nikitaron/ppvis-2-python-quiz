@@ -113,7 +113,7 @@ print(x)
 ```
 Output: `2`
 
-Tag: #tuple/method/count
+Tag: #tuple/operation/count
 
 ---
 
@@ -126,7 +126,7 @@ print(x)
 ```
 Output: `3`
 
-Tag: #tuple/method/index
+Tag: #tuple/operation/index
 
 ---
 
@@ -140,6 +140,6 @@ print(x)
 ```
 Output: `ValueError: tuple.index(x): x not in tuple`
 
-Tag: #tuple/method/index
+Tag: #tuple/operation/index
 
 ---
