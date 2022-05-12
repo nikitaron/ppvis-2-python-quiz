@@ -95,7 +95,7 @@ print(car)
 ```
 Output: `{}`
 
-Tag: #dict/method/clear
+Tag: #dict/operation/clear
 
 ---
 
@@ -112,7 +112,7 @@ print(x)
 ```
 Output: `{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}`
 
-Tag: #dict/method/copy
+Tag: #dict/operation/copy
 
 ---
 
@@ -126,7 +126,7 @@ print(value)
 ```
 Output: `{'key1': 0, 'key2': 0, 'key3': 0}`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---
 
@@ -144,7 +144,7 @@ print(value)
 ```
 Output: `{<__main__.A object at ref>: 0, <__main__.A object at ref>: 0, <__main__.A object at ref>: 0}`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---
 
@@ -158,7 +158,7 @@ print(value)
 ```
 Output: `{1: [2, 3, 5], 2: [2, 3, 5], 3: [2, 3, 5]}`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---
 
@@ -172,7 +172,7 @@ print(value)
 ```
 Output: `TypeError: unhashable type: 'dict'`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---
 
@@ -185,7 +185,7 @@ print(value)
 ```
 Output: `{1: None, 2: None, 3: None}`
 
-Tag: #dict/method/fromkeys
+Tag: #dict/operation/fromkeys
 
 ---
 
@@ -202,7 +202,7 @@ print(x)
 ```
 Output: `Mustang`
 
-Tag: #dict/method/get
+Tag: #dict/operation/get
 
 ---
 
@@ -219,7 +219,7 @@ print(x)
 ```
 Output: `15000`
 
-Tag: #dict/method/get/parameter/value
+Tag: #dict/operation/get
 
 ---
 
@@ -236,7 +236,7 @@ print(x)
 ```
 Output: `None`
 
-Tag: #dict/method/get/parameter/value
+Tag: #dict/operation/get
 
 ---
 
@@ -252,7 +252,7 @@ print(x)
 ```
 Output: `dict_items([('brand', 'Ford'), ('model', 'Mustang')])`
 
-Tag: #dict/method/items
+Tag: #dict/operation/items
 
 ---
 
@@ -271,7 +271,7 @@ print(x)
 ```
 Output: `dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2018)])`
 
-Tag: #dict/method/items
+Tag: #dict/operation/items
 
 ---
 
@@ -288,7 +288,7 @@ print(x)
 ```
 Output: `dict_keys(['brand', 'model', 'year'])`
 
-Tag: #dict/method/keys
+Tag: #dict/operation/keys
 
 ---
 
@@ -307,7 +307,7 @@ print(x)
 ```
 Output: `dict_keys(['brand', 'model', 'year', 'color'])`
 
-Tag: #dict/method/keys
+Tag: #dict/operation/keys
 
 ---
 
@@ -325,7 +325,7 @@ print(car)
 ```
 Output: `{'brand': 'Ford', 'year': 1964}`
 
-Tag: #dict/method/pop
+Tag: #dict/operation/pop
 
 ---
 
@@ -343,7 +343,7 @@ print(x)
 ```
 Output: `KeyError: 'price'`
 
-Tag: #dict/method/pop
+Tag: #dict/operation/pop
 
 ---
 
@@ -359,7 +359,7 @@ print(x)
 ```
 Output: `Rover`
 
-Tag: #dict/method/pop
+Tag: #dict/operation/pop
 
 ---
 
@@ -376,7 +376,7 @@ print(x)
 ```
 Output: `('year', 1964)`
 
-Tag: #dict/method/popitem
+Tag: #dict/operation/popitem
 
 ---
 
@@ -393,7 +393,7 @@ print(x)
 ```
 Output: `Mustang`
 
-Tag: #dict/method/setdefault
+Tag: #dict/operation/setdefault
 
 ---
 
@@ -410,7 +410,7 @@ print(x)
 ```
 Output: `white`
 
-Tag: #dict/method/setdefault
+Tag: #dict/operation/setdefault
 
 ---
 
@@ -427,7 +427,7 @@ print(x)
 ```
 Output: `None`
 
-Tag: #dict/method/setdefault
+Tag: #dict/operation/setdefault
 
 ---
 
@@ -444,6 +444,6 @@ print(car)
 ```
 Output: `{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}`
 
-Tag: #dict/method/update
+Tag: #dict/operation/update
 
 ---
