@@ -181,3 +181,24 @@ print(a)
 Output: `{'-', 'b', 'c', 'd', 'a'}`
 
 Tag: #set/comprehension
+
+---
+```python
+ids = {1, 2, 3, 4, 3}
+
+print(ids[2])
+```
+Output: `TypeError: 'set' object is not subscriptable`
+
+Tag: #set/comprehension
+
+---
+```python
+lst = [1, 'non-empty string', True, '', False, 0, None]
+st = set(lst)
+
+print(len(st))
+```
+Output: `5`
+
+Tag: #set/comprehension, #boolean/literal

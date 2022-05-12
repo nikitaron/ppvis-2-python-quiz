@@ -68,3 +68,16 @@ Output: `some`
 Tag: #dict/indexing
 
 ---
+```python
+dict1 = {
+    0: "False",
+    True: "1"
+}
+
+print(dict1[1], dict1[False])
+```
+Output: `1 False`
+
+Tag: #dict/indexing
+
+---
