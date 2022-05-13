@@ -114,7 +114,7 @@ print(foo(0))
 ```
 Output: `5`
 
-Tag: #statement/try_except,  #statement/try_except_else, #statement/try_except_finally
+Tag: #statement/try,  #statement/try/else, #statement/try/finally
 
 ---
 
@@ -133,7 +133,7 @@ print(foo(4))
 ```
 Output: `4`
 
-Tag: #statement/try_except, #statement/try_except_else
+Tag: #statement/try, #statement/try/else
 
 ---
 
@@ -165,7 +165,7 @@ except:
 ```
 Output: `ZeroDivisionError: division by zero`
 
-Tag: #statement/raise, #statement/try_except
+Tag: #statement/raise, #statement/try
 
 ---
 
