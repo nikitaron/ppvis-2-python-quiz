@@ -100,3 +100,103 @@ Output: `Hello, World`
 Tag: #class/prototype
 
 ---
+
+```python
+class A():
+  def __len__(self):
+    return 0
+
+obj = A()
+print(bool(obj))
+```
+Output: `False`
+
+Tag: #class/method/__len__
+
+---
+
+```python
+class Person:
+  def __init__(hey, name, age):
+    hey.name = name
+    hey.age = age
+
+  def myfunc(abc):
+    print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+```
+Output: `Hello my name is John`
+
+Tag: #class/self
+
+---
+
+```python
+class Person:
+  def __init__(hey, name, age):
+    hey.name = name
+    hey.age = age
+
+  def my_age(abs):
+    print("Hello my name is " + abs.age)
+
+p1 = Person("John", 36)
+
+del p1.age
+
+p1.my_age()
+```
+Output: `AttributeError: 'Person' object has no attribute 'age'`
+
+Tag: #statement/del, #class/property
+
+---
+
+```python
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+
+x = Student("Mike", "Olsen")
+
+x.printname()
+```
+Output: `Mike Olsen`
+
+Tag: #class/super, #class/inheritance
+
+---
+
+```python
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    self.fname = fname
+    self.lname = lname
+    
+x = Student("Mike", "Olsen")
+
+x.printname()
+```
+Output: `AttributeError: 'Student' object has no attribute 'firstname'`
+
+Tag: #class/super, #class/inheritance
+
+---

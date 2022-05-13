@@ -83,6 +83,18 @@ Tag: #dict/indexing
 ---
 
 ```python
+text = '1,2,3'
+d = dict.fromkeys(text)
+
+print(len(d))
+```
+Output: `4`
+
+Tag: #dict/operation/fromkeys
+
+---
+
+```python
 car = {
   "brand": "Ford",
   "model": "Mustang",
@@ -447,4 +459,3 @@ Output: `{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}`
 Tag: #dict/operation/update
 
 ---
-

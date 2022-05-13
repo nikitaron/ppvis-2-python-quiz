@@ -89,4 +89,27 @@ Tag: #type/annotation, #build-in/type
 
 ---
 
+```python
+x = 3+5j
+
+print(type(x))
+```
+Output: `<class 'complex'>`
+
+Tag: #complex,  #type, #build-in/type
+
+---
+
+```python
+text = b"Hello, World!!!"
+
+print(type(text))
+```
+Output: `<class 'bytes'>`
+
+Tag: #bytes,  #type, #build-in/type
+
+---
+
+
 

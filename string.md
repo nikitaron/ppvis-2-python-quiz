@@ -206,6 +206,17 @@ Tag: #string/operation/encode
 ---
 
 ```python
+txt = "The best things in life are free!"
+
+print("free" in txt)
+```
+Output: `True`
+
+Tag: #expression/operation/in, #string/literal
+
+---
+
+```python
 a = '1'.encode()
 b = (1).encode()
 
