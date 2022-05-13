@@ -99,3 +99,13 @@ Output: `False`
 Tag: #boolean #build-in/any
 
 ---
+```python
+x = bool("")
+
+print(x == True)
+```
+Output: `False`
+
+Tag: #string/literal, #boolean/operation/compare
+
+---

@@ -93,3 +93,47 @@ Output: `<class 'dict_values'>`
 Tag: #type #dict/operation/values
 
 ---
+```python
+a: float = 1
+b: float = 2
+
+print((a + b).bit_length())
+```
+Output: `2`
+
+Tag: #type/annotation, #int/operation/bit_length
+
+---
+```python
+a: type = type(type)
+b = type(int)
+print(a is b)
+```
+Output: `True`
+
+Tag: #type/annotation, #build-in/type
+
+---
+
+```python
+x = 3+5j
+
+print(type(x))
+```
+Output: `<class 'complex'>`
+
+Tag: #complex,  #type, #build-in/type
+
+---
+
+```python
+text = b"Hello, World!!!"
+
+print(type(text))
+```
+Output: `<class 'bytes'>`
+
+Tag: #bytes,  #type, #build-in/type
+
+---
+

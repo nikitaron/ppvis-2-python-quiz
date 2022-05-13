@@ -60,3 +60,23 @@ Output: `True`
 Tag: #build-in/int, #build-in/float, #int/operator/exponentiation
 
 ---
+```python
+print(round(0.5))
+```
+Output: `0`
+
+Tag: #float/operation/round
+
+---
+```python
+a = 5 ** 1000000
+b = 5. ** 1000000
+print(type(a) == type(b))
+
+```
+
+Output: `OverflowError: (34, 'Result too large')    `
+
+Tag: #float/comprehension, #build-in/type
+
+---

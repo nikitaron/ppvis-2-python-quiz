@@ -267,3 +267,14 @@ Output: `2`
 Tag: #list/operation/count
 
 ---
+```python
+lst = ['123', '321', '000']
+
+print(lst.pop(2), *lst)
+
+```
+Output: `000 123 321`
+
+Tag: #list/operation/pop
+
+---
