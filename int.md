@@ -17,6 +17,15 @@ Tag: #int/operation/bit_count, #int/literal
 
 ---
 ```python
+a = 1 - .1
+print(int(a))
+```
+Output: `0`
+
+Tag: #int #build-in/int
+
+---
+```python
 a, b = 424411453, 3122871
 lst = divmod(a, b)
 res = lst[0] * b + lst[1]

@@ -68,6 +68,32 @@ Tag: #type/compare
 
 ---
 ```python
+elements = {
+    "key": "value",
+    4: 20,
+    "11": (1, 7, 2)
+}
+print(type(elements.keys()))
+```
+Output: `<class 'dict_keys'>`
+
+Tag: #type #dict/operation/keys
+
+---
+```python
+elements = {
+    "key": "value",
+    4: 20,
+    "11": (1, 7, 2)
+}
+print(type(elements.values()))
+```
+Output: `<class 'dict_values'>`
+
+Tag: #type #dict/operation/values
+
+---
+```python
 a: float = 1
 b: float = 2
 
@@ -110,6 +136,4 @@ Output: `<class 'bytes'>`
 Tag: #bytes,  #type, #build-in/type
 
 ---
-
-
 

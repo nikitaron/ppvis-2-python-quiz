@@ -42,6 +42,25 @@ Tag: #tuple/assignment
 
 ---
 ```python
+t = ("Jake", "Mike", "O'Brien", "Tim", "George", "Heisenberg")
+t.sort(key=lambda x: len(x), reverse=True)
+print(t.index("Heisenberg"))
+```
+Output: `AttributeError: 'tuple' object has no attribute 'sort'`
+
+Tag: #tuple
+
+---
+```python
+t = ([17, 9, 59], 12, 9, "rt9y", 11, 3 * 3, 0., 9 / 3 * 3, "3" * 3)
+print(t.count(9))
+```
+Output: `3`
+
+Tag: #tuple/operation/count
+
+---
+```python
 tuple1 = (1, 2, 3)
 tuple2 = tuple(1, 2, 3)
 

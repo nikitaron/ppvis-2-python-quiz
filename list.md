@@ -258,7 +258,15 @@ Output: `2`
 Tag: #list/operation/count, #dict/equal
 
 ---
+```python
+k = [7, 15, 13, 9, 1, 6, 13, 10, 2, 1, 0, 0.1, 4]
+print(k.count(13 | 4))
+```
+Output: `2`
 
+Tag: #list/operation/count
+
+---
 ```python
 lst = ['123', '321', '000']
 

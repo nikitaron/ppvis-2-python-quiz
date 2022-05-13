@@ -90,7 +90,15 @@ Output: `False True`
 Tag: #boolean/literal
 
 ---
+```python
+elements = ((), [], {}, 0, 0., "", False)
+print(any(elements))
+```
+Output: `False`
 
+Tag: #boolean #build-in/any
+
+---
 ```python
 x = bool("")
 
