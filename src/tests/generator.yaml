@@ -1,11 +1,11 @@
 code: |
-def func():
-  yield 1
-  return 2
-  yield 3
+  def func():
+    yield 1
+    return 2
+    yield 3
 
-for i in func():
-  print(i)
+  for i in func():
+    print(i)
 output: "1"
 tag:
   - generator/definition
@@ -14,46 +14,48 @@ tag:
 ---
 
 code: |
-a = [1, 5, 14]
+  a = [1, 5, 14]
 
-gen = (i * 2 for i in a)
-b = list(gen)
+  gen = (i * 2 for i in a)
+  b = list(gen)
 
-print(*gen)
+  print(*gen)
 output: "''"
 tag:
   - generator/reusable
 
 ---
-code: |
-num_list: list = [1, 3, 6, 10]
-multiplied_list = (num**2 for num in num_list)
 
-print(type(multiplied_list))
+code: |
+  num_list: list = [1, 3, 6, 10]
+  multiplied_list = (num**2 for num in num_list)
+
+  print(type(multiplied_list))
 output: "<class 'generator'>"
 tag:
   - generator
   - build-in/list
   - build-in/type
+
 ---
 
 code: |
-numbers = [1, 2, 3, 4, 5]
+  numbers = [1, 2, 3, 4, 5]
+  squares: list = [number**2 for number in numbers if number % 2 == 0]
 
-squares: list = [number**2 for number in numbers if number % 2 == 0]
-
-print(squares)
+  print(squares)
 output: "[4, 16]"
 tag:
   - generator
   - build-in/list
+
 ---
 
 code: |
-def increment(n):
-  yield n + 1
-  
-print(type(increment(5)))
+  def increment(n):
+    yield n + 1
+    
+  print(type(increment(5)))
 output: "<class 'generator'>"
 tag:
   - generator
@@ -63,13 +65,13 @@ tag:
 ---
 
 code: |
-def func():
-  yield 'Hello'
-  yield 'World'
-  yield '!!!'
-  
-for letter in func():
-  print(letter, end=' ')
+  def func():
+    yield 'Hello'
+    yield 'World'
+    yield '!!!'
+    
+  for letter in func():
+    print(letter, end=' ')
 output: "Hello World !!!"
 tag:
   - generator
@@ -78,9 +80,8 @@ tag:
 ---
 
 code: |
-expression = (letter for letter in 'abc')
-
-len(expression)
+  expression = (letter for letter in 'abc')
+  len(expression)
 output: "TypeError: object of type 'generator' has no len()"
 tag:
   - generator
@@ -89,9 +90,9 @@ tag:
 ---
 
 code: |
-abc_gen_expr = (letter for letter in 'abc')
+  abc_gen_expr = (letter for letter in 'abc')
 
-print(next(abc_gen_expr))
+  print(next(abc_gen_expr))
 output: "a"
 tag:
   - generator

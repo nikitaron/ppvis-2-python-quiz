@@ -1,112 +1,129 @@
 code: |
-a = 'Python best'
-a[a.index('t')] = 'd'
+  a = 'Python best'
+  a[a.index('t')] = 'd'
 
-print(a)
+  print(a)
 output: "TypeError: 'str' object does not support item assignment"
 tag:
   - string/immutable
 
 ---
+
 code: |
-print(sum('Lorem ipsum', ''))
+  print(sum('Lorem ipsum', ''))
 output: "TypeError: sum() can't sum strings [use ''.join(seq) instead]"
 tag:
   - string/concatenation
   - built-in/sum
 
 ---
-code: |
-a = "Hello, World"
 
-print(a[:6:2])
-output: ""Hlo""
+code: |
+  a = "Hello, World"
+
+  print(a[:6:2])
+output: "Hlo"
 tag:
   - string/operation/slice
 
 ---
-code: |
-st = "spam"
 
-print(st[:-1:])
+code: |
+  st = "spam"
+
+  print(st[:-1:])
 output: ""spa""
 tag:
   - string/operation/slice
 
 ---
-code: |
-st = "spam"
 
-print(st[-1::-1])
+code: |
+  st = "spam"
+
+  print(st[-1::-1])
 output: ""maps""
 tag:
   - string/operation/slice
 
 ---
+
 code: |
-print("abbzxyzxzxabb".count("abb", -10, -1))
+  print("abbzxyzxzxabb".count("abb", -10, -1))
 output: "0"
 tag:
   - string/operation/count
 
 ---
+
 code: |
-arr = (1, 2, 3)
-s = str(arr)
-print(s[4:10])
+  arr = (1, 2, 3)
+  s = str(arr)
+
+  print(s[4:10])
 output: ""2, 3)""
 tag:
   - string/operation/slice
   - build-in/str
 
 ---
+
 code: |
-s = "python"
-print(len(s * 2 + ''))
+  s = "python"
+
+  print(len(s * 2 + ''))
 output: "12"
 tag:
   - string/operation/multiple
   - build-in/len
 
 ---
-code: |
-a = "Good morning!"
-b = a.zfill(20)
 
-if b != a:
-  print(a, b)
+code: |
+  a = "Good morning!"
+  b = a.zfill(20)
+  if b != a:
+    print(a, b)
 output: ""Good morning!" "0000000Good morning!""
 tag:
   - string/operation/zfill
 
 ---
+
 code: |
-txt = "For only {price:.2f} dollars!"
-print(txt.format(price=49)) 
+  txt = "For only {price:.2f} dollars!"
+
+  print(txt.format(price=49)) 
 output: ""For only 49.00 dollars!""
 tag:
   - string/operation/format
 
 ---
+
 code: |
-s = "Python3 is a lot better than Python2."
-print(s.rfind("Python"))
+  s = "Python3 is a lot better than Python2."
+
+  print(s.rfind("Python"))
 output: "29"
 tag:
   - string/operation/rfind
 
 ---
+
 code: |
-s = "Python3 is a lot better than Python2."
-print(s.rpartition("Python"))
+  s = "Python3 is a lot better than Python2."
+
+  print(s.rpartition("Python"))
 output: "('Python3 is a lot better than ', 'Python', '2.')"
 tag:
   - string/operation/rpartition
 
 ---
+
 code: |
-s = "Python3 is a lot better than Python2."
-print(s.partition("Python"))
+  s = "Python3 is a lot better than Python2."
+
+  print(s.partition("Python"))
 output: "('', 'Python', '3 is a lot better than Python2.')"
 tag:
   - string/operation/partition
@@ -114,9 +131,9 @@ tag:
 ---
 
 code: |
-a = "P".format("y")
+  a = "P".format("y")
 
-print(a)
+  print(a)
 output: "P"
 tag:
   - string/operation/format
@@ -124,9 +141,9 @@ tag:
 ---
 
 code: |
-b = "{2}{0}".format("p", "y", "p")
+  b = "{2}{0}".format("p", "y", "p")
 
-print(b)
+  print(b)
 output: "pp"
 tag:
   - string/operation/format
@@ -134,11 +151,11 @@ tag:
 ---
 
 code: |
-st = 'hello'
-indx = st.index('l')
-st[indx] = 'p'
+  st = 'hello'
+  indx = st.index('l')
+  st[indx] = 'p'
 
-print(st)
+  print(st)
 output: "TypeError: 'str' object does not support item assignment'"
 tag:
   - string/immutable
@@ -146,9 +163,9 @@ tag:
 ---
 
 code: |
-what = """i"""
-up = 'i'
-print(what is up)
+  what = """i"""
+  up = 'i'
+  print(what is up)
 output: "True"
 tag:
   - string/operation/is
@@ -156,11 +173,11 @@ tag:
 ---
 
 code: |
-lst = []
-lst = 'a'
-lst *= 2
+  lst = []
+  lst = 'a'
+  lst *= 2
 
-print(lst)
+  print(lst)
 output: "aa"
 tag:
   - string/operation/multiply
@@ -168,9 +185,9 @@ tag:
 ---
 
 code: |
-values = '' or None
+  values = '' or None
 
-print(values)
+  print(values)
 output: "None"
 tag:
   - string/operation/empty_value
@@ -178,10 +195,10 @@ tag:
 ---
 
 code: |
-a = '1'.encode()
-b = (1).encode()
+  a = '1'.encode()
+  b = (1).encode()
 
-print(a == b)
+  print(a == b)
 output: "AttributeError: 'int' object has no attribute 'encode'"
 tag:
   - string/operation/encode
@@ -189,9 +206,9 @@ tag:
 ---
 
 code: |
-txt = "The best things in life are free!"
+  txt = "The best things in life are free!"
 
-print("free" in txt)
+  print("free" in txt)
 output: "True"
 tag:
   - expression/operation/in
@@ -200,10 +217,10 @@ tag:
 ---
 
 code: |
-a = '1'.encode()
-b = (1).encode()
+  a = '1'.encode()
+  b = (1).encode()
 
-print(a == b)
+  print(a == b)
 output: "AttributeError: 'int' object has no attribute 'encode'"
 tag:
   - string/operation/encode
@@ -211,24 +228,21 @@ tag:
 ---
 
 code: |
-txt = "hello, my name is Peter, I am 26 years old"
+  txt = "hello, my name is Peter, I am 26 years old"
+  x = txt.split(", ")
 
-x = txt.split(", ")
-
-print(x)
+  print(x)
 output: "['hello', 'my name is Peter', 'I am 26 years old']"
 tag:
   - string/operation/split
 
 ---
 
-
 code: |
-txt = "apple#banana#cherry#orange"
+  txt = "apple#banana#cherry#orange"
+  x = txt.split("#", 1)
 
-x = txt.split("#", 1)
-
-print(x)
+  print(x)
 output: "['apple', 'banana#cherry#orange']"
 tag:
   - string/operation/split
@@ -236,11 +250,10 @@ tag:
 ---
 
 code: |
-txt = "Thank you for the music\nWelcome to the jungle\n"
+  txt = "Thank you for the music\nWelcome to the jungle\n"
+  x = txt.splitlines()
 
-x = txt.splitlines()
-
-print(x)
+  print(x)
 output: "['Thank you for the music', 'Welcome to the jungle']"
 tag:
   - string/operation/splitlines
@@ -248,11 +261,10 @@ tag:
 ---
 
 code: |
-txt = "Thank you for the music\nWelcome to the jungle"
+  txt = "Thank you for the music\nWelcome to the jungle"
+  x = txt.splitlines(True)
 
-x = txt.splitlines(True)
-
-print(x)
+  print(x)
 output: "['Thank you for the music\n', 'Welcome to the jungle']"
 tag:
   - string/operation/splitlines
@@ -260,11 +272,10 @@ tag:
 ---
 
 code: |
-mydict = {83:  80}
+  mydict = {83:  80}
+  txt = "Hello Sam!"
 
-txt = "Hello Sam!"
-
-print(txt.translate(mydict))
+  print(txt.translate(mydict))
 output: "Hello Pam!"
 tag:
   - string/operation/translate
@@ -272,13 +283,12 @@ tag:
 ---
 
 code: |
-txt = "Hi Sam!"
+  txt = "Hi Sam!"
+  x = "mSa"
+  y = "eJo"
+  mytable = txt.maketrans(x, y)
 
-x = "mSa"
-y = "eJo"
-
-mytable = txt.maketrans(x, y)
-print(txt.translate(mytable))
+  print(txt.translate(mytable))
 output: "Hi Joe!"
 tag:
   - string/operation/maketrans
@@ -287,11 +297,8 @@ tag:
 ---
 
 code: |
-txt = ",,,,,rrttgg.....banana....rrr"
-
-x = txt.strip(",.grt")
+  txt = ",,,,,rrttgg.....banana....rrr"
+  x = txt.strip(",.grt")
 output: "banana"
 tag:
   - string/operation/strip
-
----

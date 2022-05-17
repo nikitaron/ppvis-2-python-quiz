@@ -1,7 +1,7 @@
 code: |
-i = {}
+  i = {}
 
-print(type(i))
+  print(type(i))
 output: "<class 'dict'>"
 tag:
   - dict/literal
@@ -10,13 +10,13 @@ tag:
 ---
 
 code: |
-lst = [[1, 2], [2, 2, 3], [4, 2, 1, 1], [1, 2]]
-counts = dict()
+  lst = [[1, 2], [2, 2, 3], [4, 2, 1, 1], [1, 2]]
+  counts = dict()
 
-for el in lst:
+  for el in lst:
   counts[tuple(el)] = el
 
-print(len(counts))
+  print(len(counts))
 output: "3"
 tag:
   - dict/operation/set
@@ -24,13 +24,13 @@ tag:
 ---
 
 code: |
-nums = {
-  1: {1},
-  2: {2},
-  3: {3}
-}
+  nums = {
+    1: {1},
+    2: {2},
+    3: {3}
+  }
 
-print(list(nums.values()))
+  print(list(nums.values()))
 output: "[{1}, {2}, {3}]"
 tag:
   - dict/operation/values
@@ -38,15 +38,15 @@ tag:
 ---
 
 code: |
-template = { "i": 0 }
-values = []
+  template = { "i": 0 }
+  values = []
 
-for i in range(5):
-  if i > 2:
-  template["i"] = i
-  values.append(template)
+  for i in range(5):
+    if i > 2:
+    template["i"] = i
+    values.append(template)
 
-print(values)
+  print(values)
 output: "[{'i': 4}, {'i': 4}]"
 tag:
   - dict/lvalue
@@ -54,11 +54,11 @@ tag:
 ---
 
 code: |
-d = {
-  -1: "some"
-}
+  d = {
+    -1: "some"
+  }
 
-print(d[-1])
+  print(d[-1])
 output: "some"
 tag:
   - dict/indexing
@@ -66,44 +66,47 @@ tag:
 ---
 
 code: |
-d = {
-  "fruits": 3,
-  "vegetables": 5,
-  "cherries": 2
-}
-p = d.keys()[:]
-print(p)
+  d = {
+    "fruits": 3,
+    "vegetables": 5,
+    "cherries": 2
+  }
+  p = d.keys()[:]
+  print(p)
 output: "TypeError: 'dict_keys' object is not subscriptable"
 tag:
   - dict/operation/keys
 
 ---
+
 code: |
-element_dict = {1: 4, "value": 20, "key": 1, 18: .9}
-if any(element_dict):
-  print(element_dict.keys())
+  element_dict = {1: 4, "value": 20, "key": 1, 18: .9}
+  if any(element_dict):
+    print(element_dict.keys())
 output: "dict_keys([1, 'value', 'key', 18])"
 tag:
   - dict/operation/keys
   - build-in/any
 
 ---
+
 code: |
-d = {
-  [1,2]: [3,4],
-  (1): [1, 2]
-}
-print(d.items())
+  d = {
+    [1,2]: [3,4],
+    (1): [1, 2]
+  }
+  print(d.items())
 output: "TypeError: unhashable type: 'list'"
 
 ---
-code: |
-dict1 = {
-  0: "False",
-  True: "1"
-}
 
-print(dict1[1], dict1[False])
+code: |
+  dict1 = {
+    0: "False",
+    True: "1"
+  }
+
+  print(dict1[1], dict1[False])
 output: "1 False"
 tag:
   - dict/indexing
@@ -111,10 +114,10 @@ tag:
 ---
 
 code: |
-text = '1,2,3'
-d = dict.fromkeys(text)
+  text = '1,2,3'
+  d = dict.fromkeys(text)
 
-print(len(d))
+  print(len(d))
 output: "4"
 tag:
   - dict/operation/fromkeys
@@ -122,15 +125,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-car.clear()
+  car.clear()
 
-print(car)
+  print(car)
 output: "{}"
 tag:
   - dict/operation/clear
@@ -138,15 +141,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.copy()
+  x = car.copy()
 
-print(x) 
+  print(x) 
 output: "{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}"
 tag:
   - dict/operation/copy
@@ -154,12 +157,12 @@ tag:
 ---
 
 code: |
-x = ('key1', 'key2', 'key3')
-y = 0
+  x = ('key1', 'key2', 'key3')
+  y = 0
 
-value = dict.fromkeys(x, y)
+  value = dict.fromkeys(x, y)
 
-print(value) 
+  print(value) 
 output: "{'key1': 0, 'key2': 0, 'key3': 0}"
 tag:
   - dict/operation/fromkeys
@@ -167,16 +170,16 @@ tag:
 ---
 
 code: |
-class A:
-  def __init__(self, i):
-  self.i = i
+  class A:
+    def __init__(self, i):
+    self.i = i
 
-x = [A(1), A(2), A(3)]
-y = 0
+  x = [A(1), A(2), A(3)]
+  y = 0
 
-value = dict.fromkeys(x, y)
+  value = dict.fromkeys(x, y)
 
-print(value)
+  print(value)
 output: "{<__main__.A object at ref>: 0, <__main__.A object at ref>: 0, <__main__.A object at ref>: 0}"
 tag:
   - dict/operation/fromkeys
@@ -184,12 +187,12 @@ tag:
 ---
 
 code: |
-x = [1, 2, 3]
-y = [2, 3, 5]
+  x = [1, 2, 3]
+  y = [2, 3, 5]
 
-value = dict.fromkeys(x, y)
+  value = dict.fromkeys(x, y)
 
-print(value)
+  print(value)
 output: "{1: [2, 3, 5], 2: [2, 3, 5], 3: [2, 3, 5]}"
 tag:
   - dict/operation/fromkeys
@@ -197,12 +200,12 @@ tag:
 ---
 
 code: |
-x = [ { "i": 1 }, { "i": 3 }, { "i": 2 } ]
-y = 1
+  x = [ { "i": 1 }, { "i": 3 }, { "i": 2 } ]
+  y = 1
 
-value = dict.fromkeys(x, y)
+  value = dict.fromkeys(x, y)
 
-print(value)
+  print(value)
 output: "TypeError: unhashable type: 'dict'"
 tag:
   - dict/operation/fromkeys
@@ -210,11 +213,11 @@ tag:
 ---
 
 code: |
-x = { 1, 2, 3 }
+  x = { 1, 2, 3 }
 
-value = dict.fromkeys(x)
+  value = dict.fromkeys(x)
 
-print(value)
+  print(value)
 output: "{1: None, 2: None, 3: None}"
 tag:
   - dict/operation/fromkeys
@@ -222,15 +225,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.get("model")
+  x = car.get("model")
 
-print(x)
+  print(x)
 output: "Mustang"
 tag:
   - dict/operation/get
@@ -238,15 +241,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.get("price", 15000)
+  x = car.get("price", 15000)
 
-print(x)
+  print(x)
 output: "15000"
 tag:
   - dict/operation/get
@@ -254,15 +257,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.get("price")
+  x = car.get("price")
 
-print(x)
+  print(x)
 output: "None"
 tag:
   - dict/operation/get
@@ -270,43 +273,49 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+  }
 
-x = car.items()
+  x = car.items()
 
-print(x)
+  print(x)
 output: "dict_items([('brand', 'Ford'), ('model', 'Mustang')])"
 tag:
   - dict/operation/items
 
 ---
+
 code: |
-elements = {1: 2, 2: 3, 3: 4}
-elements[2] += 6
-print(elements.items())
+  elements = {1: 2, 2: 3, 3: 4}
+  elements[2] += 6
+
+  print(elements.items())
 output: "dict_items([(1, 2), (2, 9), (3, 4)])"
 tag:
   - dict/operation/item
   - dict/indexing
 
 ---
+
 code: |
-x = {1: 'a', 2: 'b'}
-y = {2: 'c', 3: 'd'}
-print({**x, **y}[2])
-output: ""c""
+  x = {1: 'a', 2: 'b'}
+  y = {2: 'c', 3: 'd'}
+
+  print({**x, **y}[2])
+output: "c"
 tag:
   - dict/indexing
   - dict/var-keyword
 
 ---
+
 code: |
-elements = [1, 2, 3]
-res_elements = dict.fromkeys(elements, elements ** 2)
-print(res_elements)
+  elements = [1, 2, 3]
+  res_elements = dict.fromkeys(elements, elements ** 2)
+
+  print(res_elements)
 output: "TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'int'"
 tag:
   - dict/operation/fromkeys 
@@ -314,17 +323,17 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.items()
+  x = car.items()
 
-car["year"] = 2018
+  car["year"] = 2018
 
-print(x)
+  print(x)
 output: "dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2018)])"
 tag:
   - dict/operation/items
@@ -332,15 +341,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.keys()
+  x = car.keys()
 
-print(x)
+  print(x)
 output: "dict_keys(['brand', 'model', 'year'])"
 tag:
   - dict/operation/keys
@@ -348,17 +357,17 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.keys()
+  x = car.keys()
 
-car["color"] = "white"
+  car["color"] = "white"
 
-print(x)
+  print(x)
 output: "dict_keys(['brand', 'model', 'year', 'color'])"
 tag:
   - dict/operation/keys
@@ -366,16 +375,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-car.pop("model")
+  car.pop("model")
 
-print(car)
-
+  print(car)
 output: "{'brand': 'Ford', 'year': 1964}"
 tag:
   - dict/operation/pop
@@ -383,16 +391,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.pop("price")
+  x = car.pop("price")
 
-print(x)
-
+  print(x)
 output: "KeyError: 'price'"
 tag:
   - dict/operation/pop
@@ -400,14 +407,14 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "year": 1964
+  }
 
-x = car.pop("model", 'Rover')
+  x = car.pop("model", 'Rover')
 
-print(x)
+  print(x)
 output: "Rover"
 tag:
   - dict/operation/pop
@@ -415,15 +422,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.popitem()
+  x = car.popitem()
 
-print(x)
+  print(x)
 output: "('year', 1964)"
 tag:
   - dict/operation/popitem
@@ -431,15 +438,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.setdefault("model", "Bronco")
+  x = car.setdefault("model", "Bronco")
 
-print(x)
+  print(x)
 output: "Mustang"
 tag:
   - dict/operation/setdefault
@@ -447,15 +454,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.setdefault("color", "white")
+  x = car.setdefault("color", "white")
 
-print(x)
+  print(x)
 output: "white"
 tag:
   - dict/operation/setdefault
@@ -463,15 +470,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-x = car.setdefault("price")
+  x = car.setdefault("price")
 
-print(x)
+  print(x)
 output: "None"
 tag:
   - dict/operation/setdefault
@@ -479,17 +486,15 @@ tag:
 ---
 
 code: |
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+  car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+  }
 
-car.update({"color": "White"})
+  car.update({"color": "White"})
 
-print(car)
+  print(car)
 output: "{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}"
 tag:
   - dict/operation/update
-
----
