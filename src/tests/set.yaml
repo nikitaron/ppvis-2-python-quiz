@@ -40,7 +40,8 @@ code: |
 
   print(len(s2 - s1))
 output: "0"
-tag: set/operation/difference
+tag: 
+  - set/operation/difference
 
 ---
 
@@ -50,7 +51,8 @@ code: |
 
   print(b.issuperset(a))
 output: "True"
-tag: set/operation/issuperset
+tag: 
+  - set/operation/issuperset
 
 ---
 
@@ -199,9 +201,9 @@ tag:
 ---
 
 code: |
-ids = {1, 2, 3, 4, 3}
+  ids = {1, 2, 3, 4, 3}
 
-print(ids[2])
+  print(ids[2])
 output: "TypeError: 'set' object is not subscriptable"
 tag:
   - set/comprehension

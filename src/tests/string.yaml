@@ -32,7 +32,7 @@ code: |
   st = "spam"
 
   print(st[:-1:])
-output: ""spa""
+output: "spa"
 tag:
   - string/operation/slice
 
@@ -42,7 +42,7 @@ code: |
   st = "spam"
 
   print(st[-1::-1])
-output: ""maps""
+output: "maps"
 tag:
   - string/operation/slice
 
@@ -61,7 +61,7 @@ code: |
   s = str(arr)
 
   print(s[4:10])
-output: ""2, 3)""
+output: "2, 3)"
 tag:
   - string/operation/slice
   - build-in/str
@@ -84,7 +84,7 @@ code: |
   b = a.zfill(20)
   if b != a:
     print(a, b)
-output: ""Good morning!" "0000000Good morning!""
+output: "'Good morning!' '0000000Good morning!'"
 tag:
   - string/operation/zfill
 
@@ -94,7 +94,7 @@ code: |
   txt = "For only {price:.2f} dollars!"
 
   print(txt.format(price=49)) 
-output: ""For only 49.00 dollars!""
+output: "For only 49.00 dollars!"
 tag:
   - string/operation/format
 

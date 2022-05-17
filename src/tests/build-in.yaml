@@ -33,7 +33,7 @@ tag:
 ---
 
 code: |
-print(callable(print))
+  print(callable(print))
 output: "True"
 tag:
   - build-in/callable
