@@ -1,272 +1,255 @@
-```python
+code: |
 a = {1, True, '1'}
 
 print(len(a))
-```
-Output: `2`
-
-Tag: #set/literal, #set/operation/length
+output: "2"
+tag:
+  - set/literal
+  - set/operation/length
 
 ---
-```python
+code: |
 words = {'user', 'billy',
-         'password', 'text'}
+     'password', 'text'}
 
 print(words['password'])
-```
-Output: `TypeError: 'set' object is not subscriptable`
-
-Tag: #set/operation
+output: "TypeError: 'set' object is not subscriptable"
+tag:
+  - set/operation
 
 ---
-```python
+code: |
 lst1 = [x for x in range(6)]
 lst2 = [y for y in range(9)]
 a = lst1 + lst2
 
 print(*a)
-```
-Output: `0 1 2 3 4 5 6 7 8`
-
-Tag: #set, #list/comprehension, #build-in/set
+output: "0 1 2 3 4 5 6 7 8"
+tag:
+  - set
+  - list/comprehension
+  - build-in/set
 
 ---
-```python
+code: |
 s1 = {1, 2, 3, 4, 5}
 s2 = {3, 4, 5}
 print(len(s2 - s1))
-```
-Output: `0`
-
-Tag: set/operation/difference
+output: "0"
+tag: set/operation/difference
 
 ---
-```python
+code: |
 a = {1, 2, 3, 4, 5}
 b = {1, 2, 3, 4, 5}
 print(b.issuperset(a))
-```
-Output: `True`
-
-Tag: set/operation/issuperset
+output: "True"
+tag: set/operation/issuperset
 
 ---
-```python
+code: |
 a = {1, 2, 3}
 b = {1, 2, 3, 4, 5}
 print(a & b | a)
-```
-Output: `{1, 2, 3}`
-
-Tag: #set/operation/definition, #set/operation/addition
+output: "{1, 2, 3}"
+tag:
+  - set/operation/definition
+  - set/operation/addition
 
 ---
-```python
+code: |
 a = {1, 2, 3, 4, 5}
 b = {1, 2, 3}
 print(a | b & a)
-```
-Output: `{1, 2, 3, 4, 5}`
-
-Tag: #set/operation/definition, #set/operation/addition
+output: "{1, 2, 3, 4, 5}"
+tag:
+  - set/operation/definition
+  - set/operation/addition
 
 ---
-```python
+code: |
 a = {5, 4, 3, 2, 1}
 b = {1, 2, 3, 6}
 c = {7, 4, 2, 1}
 c = c.union(a & b)
 print(c)
-```
-Output: `{1, 2, 3, 4, 7}`
-
-Tag: #set/operation/union, #set/operation/definition
+output: "{1, 2, 3, 4, 7}"
+tag:
+  - set/operation/union
+  - set/operation/definition
 
 ---
-```python
+code: |
 a = {5, 4, 3, 2, 1}
 b = {1, 2, 3, 6}
 c = {7, 4, 2, 1}
 c = c.symmetric_difference(a | b)
 print(c)
-```
-Output: `{3, 5, 6, 7}`
-
-Tag: #set/operation/symmetric_difference, #set/operation/addition
+output: "{3, 5, 6, 7}"
+tag:
+  - set/operation/symmetric_difference
+  - set/operation/addition
 
 ---
-```python
+code: |
 shop_list1 = {"apple", "cheese", "milk", "yogurt", "juice"}
 shop_list2 = {"banana", "coffee", "cacao", "milk", "tomato", "cheese"}
 
 print(*shop_list1.intersection(shop_list2))
-```
-Output: `"milk" "cheese"`
-
-Tag: #set/operation/intersection
+output: ""milk" "cheese""
+tag:
+  - set/operation/intersection
 
 ---
-```python
+code: |
 shop_list1 = {"apple", "cheese", "milk", "yogurt", "juice"}
 shop_list2 = {"banana", "coffee", "cacao", "milk", "tomato", "cheese"}
 
 shop_list1.intersection_update(shop_list2)
 print(shop_list1)
-```
-Output: `{'milk', 'cheese'}`
-
-Tag: #set/operation/intersection_update
+output: "{'milk', 'cheese'}"
+tag:
+  - set/operation/intersection_update
 
 ---
-```python
+code: |
 lang1 = {"C++", "C", "C#", "Java", "Perl"}
 
 lang2 = lang1.copy()
 lang2.update(
-    ["C", "Python", "C++",  "JavaScript", "PHP"]
+  ["C", "Python", "C++",  "JavaScript", "PHP"]
 )
 
 print(*lang2.difference(lang1))
-```
-Output: `"JavaScript" "PHP" "Python"`
-
-Tag: #set/operation/difference, #set/operation/update
+output: ""JavaScript" "PHP" "Python""
+tag:
+  - set/operation/difference
+  - set/operation/update
 
 ---
-```python
+code: |
 lang1 = {"C++", "C", "C#", "Java", "Perl"}
 lang2 = ["C", "Python", "C++",  "JavaScript", "TypeScript", "PHP"]
 
 print(lang1.isdisjoint(lang2))
-```
-Output: `False`
-
-Tag: #set/operation/isdisjoint
+output: "False"
+tag:
+  - set/operation/isdisjoint
 
 ---
-```python
+code: |
 cities1 = {"New York", "Toronto", "Cape Town", "Sao Paulo"}
 cities2 = {"Istanbul", "New York", "Caracas", "Cape Town"}
 print(cities2.symmetric_difference(cities1))
-```
-Output: `{'Toronto', 'Caracas', 'Istanbul', 'Sao Paulo'}`
-
-Tag: #set/operation/symmetric_difference
+output: "{'Toronto', 'Caracas', 'Istanbul', 'Sao Paulo'}"
+tag:
+  - set/operation/symmetric_difference
 
 ---
-```python
+code: |
 a = {3, 2, 1}
 b = {1, 2, 3}
 
 print(a.union(b).index(3))
-```
-Output: `AttributeError: 'set' object has no attribute 'index'`
-
-Tag: #set/operation/union 
+output: "AttributeError: 'set' object has no attribute 'index'"
+tag:
+  - set/operation/union 
 
 ---
-```python
+code: |
 a = set("Hello")
 print(a[-1::-1])
-```
-Output: `TypeError: 'set' object is not subscriptable`
-
-Tag: #set
+output: "TypeError: 'set' object is not subscriptable"
+tag:
+  - set
 
 ---
-```python
+code: |
 a = {el for el in "bacb-bd77-1abd-ac8b" if not el.isdigit()}
 print(a)
-```
-Output: `{'-', 'b', 'c', 'd', 'a'}`
-
-Tag: #set/comprehension
+output: "{'-', 'b', 'c', 'd', 'a'}"
+tag:
+  - set/comprehension
 
 ---
-```python
+code: |
 ids = {1, 2, 3, 4, 3}
 
 print(ids[2])
-```
-Output: `TypeError: 'set' object is not subscriptable`
-
-Tag: #set/comprehension
+output: "TypeError: 'set' object is not subscriptable"
+tag:
+  - set/comprehension
 
 ---
-```python
+code: |
 lst = [1, 'non-empty string', True, '', False, 0, None]
 st = set(lst)
 
 print(len(st))
-```
-Output: `5`
-
-Tag: #set/comprehension, #boolean/literal
+output: "5"
+tag:
+  - set/comprehension
+  - boolean/literal
 
 ---
 
-```python
+code: |
 fruits = {"apple", "banana", "cherry"}
 
 fruits.add("orange")
 
 print(fruits)
-```
-Output: `{'orange', 'apple', 'cherry', 'banana'}`
-
-Tag: #set/operation/add
+output: "{'orange', 'apple', 'cherry', 'banana'}"
+tag:
+  - set/operation/add
 
 ---
 
-```python
+code: |
 fruits = {"apple", "banana", "cherry"}
 
 fruits.add("banana")
 
 print(fruits)
-```
-Output: `{'cherry', 'banana', 'apple'}`
-
-Tag: #set/operation/add
+output: "{'cherry', 'banana', 'apple'}"
+tag:
+  - set/operation/add
 
 ---
 
-```python
+code: |
 fruits = {"apple", "banana", "cherry"}
 
 fruits.clear()
 
 print(fruits)
-```
-Output: `set()`
-
-Tag: #set/operation/clear
+output: "set()"
+tag:
+  - set/operation/clear
 
 ---
 
-```python
+code: |
 fruits = {"apple", "banana", "cherry"}
 
 fruits.remove("orange")
 
 print(fruits) 
-```
-Output: `KeyError: 'orange'`
-
-Tag: #set/operation/remove
+output: "KeyError: 'orange'"
+tag:
+  - set/operation/remove
 
 ---
 
-```python
+code: |
 fruits = {"apple", "banana", "cherry"}
 
 fruits.discard("orange")
 
 print(fruits)
-```
-Output: `{'apple', 'banana', 'cherry'}`
-
-Tag: #set/operation/discard
+output: "{'apple', 'banana', 'cherry'}"
+tag:
+  - set/operation/discard
 
 ---
 
