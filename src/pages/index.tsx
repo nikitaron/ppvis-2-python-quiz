@@ -1,6 +1,11 @@
 import * as React from "react"
 
-// styles
+import hljs from 'highlight.js/lib/core';
+import python from 'highlight.js/lib/languages/python';
+import 'highlight.js/styles/atom-one-dark.css';
+hljs.registerLanguage('python', python);
+
+// styles 
 const pageStyles = {
   color: "#232129",
   padding: 96,
@@ -73,15 +78,40 @@ const badgeStyle = {
 }
 
 
-// markup
 const IndexPage = () => {
+  const { testService } = require('../services/testService');
+
   return (
-    <main style={pageStyles}>
+    <html lang="en">
+    <head>
       <title>Home Page</title>
+    </head>
+    <body style={pageStyles}>
+
       <h1 style={headingStyles}>
-        Congratulations
+        Test
       </h1>
-    </main>
+
+      <pre class="language-python hljs">
+        <code>
+          <div id = "code">
+          </div>
+        </code>
+      </pre>
+
+      <input id="next" type="button" value="Start" onClick={() => {
+
+          document.getElementById("code")!.innerHTML = hljs.highlight(testService.getTest(), {
+            language: "python"
+          }).value
+          document.getElementById("next")!.defaultValue = "Next";
+
+          testService.next()
+        }}>
+      </input>
+
+    </body>
+    </html>
   )
 }
 
