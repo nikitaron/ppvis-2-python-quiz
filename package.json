@@ -5,7 +5,9 @@
   "description": "Python quiz",
   "author": "Roman Serdyukov",
   "keywords": [
-    "gatsby", "python", "quiz"
+    "gatsby",
+    "python",
+    "quiz"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -22,10 +24,12 @@
     "gatsby-plugin-mdx": "^3.14.0",
     "gatsby-source-filesystem": "^4.14.0",
     "gatsby-transformer-yaml-full": "^4.0.5",
+    "highlight.js": "^11.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.14",
     "@types/node": "^17.0.31",
     "@types/react": "^17.0.44",
     "@types/react-dom": "^17.0.16",
