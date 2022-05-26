@@ -292,7 +292,7 @@ code: |
       super().__init__()
 
   b = Pixel()
-Output: "Point destroyed Pixel destroyed"
+output: "Point destroyed Pixel destroyed"
 tag:
   - class/method/del
 

@@ -97,6 +97,8 @@ code: |
   }
   print(d.items())
 output: "TypeError: unhashable type: 'list'"
+tag:
+  - dict
 
 ---
 

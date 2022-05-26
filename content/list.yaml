@@ -184,6 +184,7 @@ tag:
   - list/operation/sort
 
 ---
+
 code: |
   a = ["Jake", "Mike", "Brien", "Tim", "George", "Heisenberg"]
   a.insert("Kenny", 14)
@@ -194,6 +195,7 @@ tag:
   - list/operation/insert
 
 ---
+
 code: |
   a = ["Jake", "Mike", "Brien", "Heisenberg"]
   a.insert(14, "Kenny")
@@ -204,6 +206,7 @@ tag:
   - list/operation/insert
 
 ---
+
 code: |
   a = 1.2
   b = a - 0.2
@@ -292,5 +295,3 @@ code: |
 output: "000 123 321"
 tag:
   - list/operation/pop
-
----

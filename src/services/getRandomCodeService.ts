@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface QueryResponse {
-  allDumpYaml: {
+  allYaml: {
     edges: Array<{
       node: {
         output: string;
@@ -12,7 +12,7 @@ interface QueryResponse {
   }
 }
 
-class TestService {
+class GetRandomCodeService {
 
   tests: Array<{
     node: {
@@ -28,7 +28,7 @@ class TestService {
 
     const result: QueryResponse = useStaticQuery(graphql`
       query IndexPage {
-        allDumpYaml {
+        allYaml {
           edges {
             node {
               output
@@ -40,23 +40,13 @@ class TestService {
       }
     `)
     
-    this.tests = result.allDumpYaml.edges;
-    this.counter = Math.trunc(Math.random() * 1000 % this.tests.length);
+    this.tests = result.allYaml.edges;
   }
 
   next() {
     this.counter = Math.trunc(Math.random() * 1000 % this.tests.length);
+    return this.tests[this.counter].node.code;
   }
-
-  getTest() {
-    let test = this.tests[this.counter].node.code;
-    
-    test = "\n\n" + test.split("\n").map(codeLine => {
-      return "\t" + codeLine;
-    }).join("\n") + "\n\n"
-
-    return test;
-  }
-
 }
-export const testService = new TestService();
+
+export const getRandomCodeService = new GetRandomCodeService();

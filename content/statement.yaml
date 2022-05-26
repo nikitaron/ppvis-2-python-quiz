@@ -249,7 +249,8 @@ code: |
 output: "''"
 tag:
   - statement/assert
-  - boolean/literal,  #boolean/operation/compare
+  - boolean/literal
+  - boolean/operation/compare
 
 ---
 
