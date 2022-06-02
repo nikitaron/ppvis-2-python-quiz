@@ -183,7 +183,8 @@ code: |
   print(x1 == x2, x1 is x2)
 output: "True False"
 tag:
-  - object/compare #object/identify
+  - object/compare 
+  - object/identify
 
 ---
 
@@ -216,19 +217,17 @@ tag:
 ---
 
 code: |
+  class Point:
+    def __init__(self, name, x, y):
+      self.name = name
+      self.x = x
+      self.y = y
 
-    class Point:
-        def __init__(self, name, x, y):
-            self.name = name
-            self.x = x
-            self.y = y
-    
-        def __str__(self):
-            return '{}({}, {})'.format(self.name, self.x, self.y)
-    
-    points = [Point('A', 0, 3), Point('B', 4, 0)]
-    print(points[0])
-
+    def __str__(self):
+      return '{}({}, {})'.format(self.name, self.x, self.y)
+  
+  points = [Point('A', 0, 3), Point('B', 4, 0)]
+  print(points[0])
 output: "A(0, 3)"
 tag: 
  - object/reference
@@ -236,14 +235,12 @@ tag:
 ---
 
 code: |
+  import copy
 
-    import copy
-
-    list1 = [1, 2, 3, [1, 5], ]
-    list2 = copy.copy(list1)
-    list2[3][0] = 2
-    print(list1, list2)
-
+  list1 = [1, 2, 3, [1, 5], ]
+  list2 = copy.copy(list1)
+  list2[3][0] = 2
+  print(list1, list2)
 output: "[1, 2, 3, [2, 5]] [1, 2, 3, [2, 5]]"
 tag: 
  - object/reference  
@@ -252,17 +249,16 @@ tag:
 ---
 
 code: |
-    class NumOperations():
-    def __init__(self, math_list):
-        self.math_list = math_list
+  class NumOperations():
+  def __init__(self, math_list):
+    self.math_list = math_list
 
-    def __mul__(self, other):
-        mullst = [x * y for x, y in zip(self.math_list, other.math_list)]
-        return NumOperations(mullst)
+  def __mul__(self, other):
+    mullst = [x * y for x, y in zip(self.math_list, other.math_list)]
+    return NumOperations(mullst)
 
-    q = NumOperations([1, 1, 0]) * NumOperations([10, 9, 8])
-    print('Multiplication: ' , q.math_list)     
-
+  q = NumOperations([1, 1, 0]) * NumOperations([10, 9, 8])
+  print('Multiplication: ' , q.math_list)
 output: "[10, 9, 0]"
 tag: 
   - object/reference
@@ -272,13 +268,9 @@ tag:
 
 code: |
   mylist1 = [[],[-1]]
-
   mylist2 = [[],[-1]]
-
   mylist2.sort()
-
   print(mylist1 is mylist2)
-
 output: "False"
 tag: 
  - object/identify
@@ -288,9 +280,7 @@ tag:
 
 code: |
   L = [[[[5, 6], [3, 4]], [1, 2]],[8, 8]]
-
   print(L[0][1:], L[0][0][-1][1])
-
 output: "[[1, 2]] 4"
 tag: 
  - object/reference  
@@ -298,9 +288,8 @@ tag:
 ---
 
 code: |
- L = [[1, 2, [3, 4]], [[3, 4, 5], [1, 2]]]
-
- print(L[0] is L[1])
+  L = [[1, 2, [3, 4]], [[3, 4, 5], [1, 2]]]
+  print(L[0] is L[1])
 output: "False"
 tag: 
  - object/reference 
