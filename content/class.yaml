@@ -427,7 +427,7 @@ code: |
   class A:
     pass
 
- print(A.__class__)
+  print(A.__class__)
 output: "<class 'type'>"
 tag: 
  - class/method/class
